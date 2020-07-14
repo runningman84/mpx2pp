@@ -125,8 +125,9 @@ with open(in_filename) as csv_file:
             transaction_depot = depot
 
         dict = {'Datum': transaction_date,
-        'Type': transaction_type,
+        'Typ': transaction_type,
         'ISIN': transaction_isin,
+        'WKN': transaction_isin,
         'Wert': transaction_value,
         'Zusatz': transaction_extra,
         'Betreff': row[1],
